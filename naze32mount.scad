@@ -1,0 +1,78 @@
+difference()
+{
+	union()
+	{
+		translate([-50,-71,0])
+		{
+			import("c:/naze32mount/naze32_mount.stl",3);
+		}
+		translate([-18,14,0])
+		{
+			cube([37,8,3],center=false);
+		}
+		translate([-18,-22,0])
+		{
+			cube([37,9,3],center=false);
+		}
+		translate([-22,-18.5,0])
+		{
+			cube([6,38,3],center=false);
+		}
+		translate([18,-19,0])
+		{
+			cube([6,38,3],center=false);
+		}
+	}
+
+	union()
+	{
+		translate([-14.5,15.5,-20])
+		{
+			cylinder(h=100,r=2.8,$fn=20);
+		}
+		translate([15.6,15.5,-20])
+		{
+			cylinder(h=100,r=2.8,$fn=20);
+		}
+		translate([-14.5,-15.5,-20])
+		{
+			cylinder(h=100,r=2.8,$fn=20);
+		}
+		translate([15.7,-15.4,-20])
+		{
+			cylinder(h=100,r=2.8,$fn=20);
+		}
+	}
+}
+
+translate([-14.5,15.5,2])
+{
+	difference(){
+	cylinder(h=1.5,r=2.8,$fn=20);
+	cylinder(h=3,d=3.1,$fn=20);
+	}
+}
+translate([15.6,15.5,2])
+{
+	difference(){
+	cylinder(h=1.5,r=2.8,$fn=20);
+	cylinder(h=3,d=3.1,$fn=20);
+	}
+}
+translate([-14.5,-15.5,2])
+{
+	difference(){
+	cylinder(h=1.5,r=2.8,$fn=20);
+	cylinder(h=3,d=3.1,$fn=20);
+	}
+}
+translate([15.7,-15.4,2])
+{
+	difference(){
+	cylinder(h=1.5,r=2.8,$fn=20);
+	cylinder(h=3,d=3.1,$fn=20);
+	}
+}
+
+
+
